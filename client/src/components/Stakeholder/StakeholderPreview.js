@@ -21,6 +21,7 @@ const useStyles = makeStyles(() => ({
     justifyContent: "space-between",
     alignItems: "center",
     padding: "1em 0",
+    cursor: "pointer",
   },
   info: {
     fontSize: "1em",
@@ -248,13 +249,6 @@ const StakeholderPreview = ({ stakeholder, doSelectStakeholder }) => {
               Call
             </Button>
           )}
-          <Button
-            variant="outlined"
-            size="small"
-            disabled={stakeholder.inactive}
-          >
-            Details
-          </Button>
         </div>
       </div>
     </div>
